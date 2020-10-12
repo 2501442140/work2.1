@@ -37,7 +37,6 @@ public class bookServlet extends HttpServlet {
                 String book_id=request.getParameter("book_id");
                 int ids=Integer.parseInt(book_id);
                 book bo=bsi.findbook_name(ids);
-                System.out.println(bo);
                 if(bo!=null){
                     request.getSession().setAttribute("bo",bo);
                     response.sendRedirect("update.jsp");

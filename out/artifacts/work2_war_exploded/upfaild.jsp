@@ -12,7 +12,7 @@
 </head>
 <body>
 <script type="text/javascript">
-    var aa=confirm("借阅人不能为空,是否继续借阅");
+    var aa=confirm("借阅人不能为空");
         location.href="bookServlet?comm=list";
 </script>
 </body>
